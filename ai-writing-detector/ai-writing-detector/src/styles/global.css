@@ -1,0 +1,57 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg: #0a0a0a;
+  --surface: #111111;
+  --surface-raised: #141414;
+  --border: #1f1f1f;
+  --border-hover: #333;
+  --text-primary: #e0e0e0;
+  --text-secondary: #999;
+  --text-muted: #666;
+  --text-dim: #555;
+  --accent: #ef4444;
+  --accent-glow: #ef444466;
+  --green: #22c55e;
+  --yellow: #eab308;
+  --font-serif: "Playfair Display", "Georgia", serif;
+  --font-mono: "JetBrains Mono", "Fira Code", monospace;
+  --font-body: "Georgia", "Times New Roman", serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--text-primary);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+::selection {
+  background: var(--accent);
+  color: #fff;
+}
+
+textarea:focus {
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  font-family: var(--font-mono);
+}
